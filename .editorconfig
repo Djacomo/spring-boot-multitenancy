@@ -1,0 +1,37 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 3
+end_of_line = lf
+charset = UTF-8
+trim_trailing_whitespace = true
+inser_final_newline = true
+
+[*.xml]
+indent_size = 2
+
+[*.java]
+indent_brace_style = K&R
+ij_java_block_brace_style = end_of_line
+indent_size = 4
+continuation_indent_size = 8
+
+# The indent size used in the `package.json` file cannot be changed
+# https://github.com/npm/npm/pull/3180#issuecomment-16336516
+[{*.yml,*.yaml,package.json,bowser.json}]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = UTF-8
+
+[*.sql]
+indent_size = 2
+
+[*.js]
+end_of_line = lf
+indent_size = 2
+charset = UTF-8
+
+[*.md]
+trim_trailing_whitespace = false
